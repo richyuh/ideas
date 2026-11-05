@@ -74,10 +74,14 @@ Specialized agents examine properties that deterministic checks cannot fully mea
 - Test adequacy
 - Architectural compatibility
 - Downstream impact
-- Maintainability and coupling
+- Code quality, maintainability, and coupling
+- Alignment with established conventions and patterns
+- Appropriate reuse of existing modules and shared abstractions
 - Security and privacy
 - Performance and cost
 - Operability and rollout risk
+
+Mechanical standards such as formatting, imports, and explicit dependency rules should remain deterministic. Review agents should focus on contextual quality: whether logic is placed in the appropriate layer, existing capabilities are reused instead of duplicated, established patterns are followed, and any new abstraction or convention is justified by the change rather than introduced unnecessarily.
 
 Their findings must include severity, confidence, supporting evidence, the relevant requirement or standard, and whether the issue should block the change.
 
